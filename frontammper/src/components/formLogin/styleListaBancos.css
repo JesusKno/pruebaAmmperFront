@@ -1,0 +1,20 @@
+/* Estilos para el contenedor principal */
+.container {
+    width: 100%;
+  }
+  
+  /* Estilos para el DataGrid */
+  .data-grid-container {
+    width: 100%;
+    max-height: 500px; /* Altura máxima del DataGrid */
+    overflow: auto; /* Hace que el DataGrid sea desplazable si hay demasiados elementos */
+  }
+  
+  /* Estilos para el componente ListaCuentas */
+  .lista-cuentas {
+    width: 100%;
+  }
+  
+  /* Estilos específicos para el componente ListaCuentas si es necesario */
+  
+  

@@ -1,0 +1,42 @@
+/* Estilos para el contenedor principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Estilos para el saludo y el botón */
+  .greeting-section {
+    margin-bottom: 20px;
+  }
+  
+  .greeting-section h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .greeting-section button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .greeting-section button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilos para la lista de bancos */
+  .banks-list {
+    width: 100%;
+  }
+  
+  /* Estilos específicos para la ListaBancos si es necesario */
+  
