@@ -12,7 +12,7 @@ export const Home = ({usuario, setUsuario}) => {
     <>
         <div className='container'>
             <div className='greeting-section'>
-                <h1>Bienvenido {usuario[0]['usuario']}</h1>
+                <h1>Bienvenido {usuario}</h1>
                 <button onClick={handleCerrarSesion}>Cerrar sesion</button>
             </div>
 
