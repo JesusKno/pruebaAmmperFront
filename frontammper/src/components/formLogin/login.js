@@ -36,7 +36,6 @@ export const Login = ({setUsuario}) => {
         const data = await res.json()
         if(data.Error){
           const error = data.Error
-          console.log(error);
           setError(true)
           setMensaje(error)
           
