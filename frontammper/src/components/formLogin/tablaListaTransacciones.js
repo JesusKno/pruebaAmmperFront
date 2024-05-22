@@ -20,7 +20,7 @@ export const ListaTransacciones = ({link, data , setVerTransacciones}) => {
         {field: 'amount', headerName: 'Monto de la transaccion', width: 200},
     ]
     useEffect(() =>{
-        fetch(`http://127.0.0.1:8000/transacciones/${link}/${idAccount}`)
+        fetch(`https://pruebaammperback.onrender.com/transacciones/${link}/${idAccount}`)
           .then((response) => response.json())
           .then((json) =>{
                 setBalance(json['balance'])

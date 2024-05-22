@@ -33,7 +33,7 @@ export const LoginRegister = ({setUsuario, setRegistroUsuario}) => {
         const options ={
             method: 'POST'
         }
-        const res = await fetch(`http://127.0.0.1:8000/loginRegister/${nombreUsuario}/${usuarioRegister}/${md5(password)}`, options )
+        const res = await fetch(`https://pruebaammperback.onrender.com/loginRegister/${nombreUsuario}/${usuarioRegister}/${md5(password)}`, options )
         const data = await res.json()
         console.log('revisa la data', data);
         if(data.Error){

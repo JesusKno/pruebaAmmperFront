@@ -33,7 +33,7 @@ export const Login = ({setUsuario}) => {
     const validarLogin  = async () =>{
       try { 
 
-        const res = await fetch(`http://127.0.0.1:8000/login/${usuarioRegister}/${md5(password)}`)
+        const res = await fetch(`https://pruebaammperback.onrender.com/login/${usuarioRegister}/${md5(password)}`)
         const data = await res.json()
         console.log('revisa la data', data);
         if(data.Error){

@@ -48,7 +48,7 @@ export const ListaCuentas = ({data , setVerCuentas}) => {
         }
     ]
     useEffect(() =>{
-        fetch(`http://127.0.0.1:8000/cuentas/${link}`)
+        fetch(`https://pruebaammperback.onrender.com/cuentas/${link}`)
           .then((response) => response.json())
           .then((json) => setCuentas(json['results']))
       }, [])

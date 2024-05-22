@@ -38,7 +38,7 @@ export const ListaBancos = () => {
         }
     ]
     useEffect(() =>{
-        fetch('http://127.0.0.1:8000/bancos')
+        fetch('https://pruebaammperback.onrender.com/bancos')
           .then((response) => response.json())
           .then((json) => setBancos(json))
       }, [])
