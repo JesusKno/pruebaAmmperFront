@@ -17,8 +17,7 @@ export const LoginRegister = ({setUsuario, setRegistroUsuario}) => {
 
    const onSubmit = (data, e) =>{
         try {
-            setUsuarioData(data)       
-            console.log('correo', usuarioData, 'password', password)         
+            setUsuarioData(data)               
                      
         } catch (error) {
             console.log('Error', error);
@@ -35,16 +34,13 @@ export const LoginRegister = ({setUsuario, setRegistroUsuario}) => {
         }
         const res = await fetch(`https://pruebaammperback.onrender.com/loginRegister/${nombreUsuario}/${usuarioRegister}/${md5(password)}`, options )
         const data = await res.json()
-        console.log('revisa la data', data);
         if(data.Error){
           const error = data.Error
-          console.log(error);
           setError(true)
           setMensaje(error)
           
         }else{
           const usuario = data.usuario
-          console.log(usuario)
           setUsuario(usuario)
         }
         

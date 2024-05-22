@@ -19,7 +19,6 @@ export const Login = ({setUsuario}) => {
         try {   
      
             setUsuarioData(data)  
-            console.log(error);
             
         } catch (error) {
             console.log('Error', error);
@@ -35,7 +34,6 @@ export const Login = ({setUsuario}) => {
 
         const res = await fetch(`https://pruebaammperback.onrender.com/login/${usuarioRegister}/${md5(password)}`)
         const data = await res.json()
-        console.log('revisa la data', data);
         if(data.Error){
           const error = data.Error
           console.log(error);
@@ -44,7 +42,6 @@ export const Login = ({setUsuario}) => {
           
         }else{
           const usuario = data.usuario
-          console.log(usuario)
           setUsuario(usuario)
         }
         
