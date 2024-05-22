@@ -76,7 +76,7 @@ export const Login = ({setUsuario}) => {
                 <input className='button' type='submit' value='Iniciar'/>
                 <input className='button colorButtonRegister' onClick={hanldeRegistro} type='submit' value='Registrase'/>
                 <Snackbar
-                  anchorOrigin={{vertical: 'bottom', horizontal: 'center'}}
+                  anchorOrigin={{vertical: 'top', horizontal: 'center'}}
                   open={error}
                   autoHideDuration={1000}
                   message={mensaje}
